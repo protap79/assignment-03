@@ -48,14 +48,29 @@
 
 <body class="font-sora">
     <header class="container mx-auto ">
-
-        <nav class="flex ">
+        <nav class=" lg:hidden">
+          <div class="flex justify-between">
+            <div class=" p-8">
+                <img src="c2-assets/Group.png" alt="">
+            </div>
+            <div class="flex-none p-8">
+                <button class="btn btn-square btn-ghost text-[#179800]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="inline-block h-5 w-5 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+          </div>
+        <hr class="border-[#179800]">
+        </nav>
+        <nav class="hidden lg:flex ">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class="navbar">
 
                     <img src="c2-assets/logo-header.png" alt="">
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Product</a></li>
                         <li><a>Services</a></li>
@@ -63,7 +78,7 @@
                     </ul>
                 </div>
 
-                <div class="navbar-end gap-2">
+                <div class="navbar hidden lg:flex gap-2">
 
                     <img class="w-7 gap-2" src="c2-assets/search-interface-symbol.png" alt="">
 
@@ -146,9 +161,10 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-3 grid-rows-3 gap-6 mx-auto p-10">
-                        <div class="flex bg-white rounded-lg"><div>
-                            <img class="p-4" src="c2-assets/Group 16.png" alt="">
-                        </div>
+                        <div class="flex bg-white rounded-lg">
+                            <div>
+                                <img class="p-4" src="c2-assets/Group 16.png" alt="">
+                            </div>
                             <div class="text-center p-4">
                                 <h3>Onion 1 KG</h3>
                                 <p>$39.99</p>
@@ -208,29 +224,30 @@
 
         </section>
 
-        <section class="container mx-auto my-20">
+        <section class="container mx-auto my-20 p-4">
             <h2 class="text-4xl text-[#179800] font-semibold my-10">Arrival & Offers</h2>
 
-            <div class="flex gap-5 relative">
-                <div class="flex bg-[#115414] rounded-2xl">
+            <div class="space-y-5 lg:flex gap-5">
+
+                <div class=" flex bg-[#115414] rounded-2xl">
                     <div>
                         <img class=" mx-5 pt-3" src="c2-assets/dawat-logo.png" alt="">
                         <button class="text-white bg-[#63B76D] rounded p-3 mx-8 my-4 w-60">Cook Exotic Dishes</button>
                         <h2 class="text-white text-2xl p-7">UP to <span class="text-bold">20%OFF</span></h2>
                     </div>
                     <div>
-                        <img class="ml-5 mt-10" src="c2-assets/dawat-mock-up.png" alt="">
+                        <img class="mr-2 mt-10" src="c2-assets/dawat-mock-up.png" alt="">
                     </div>
                 </div>
 
-                <div class="flex bg-[#102861] rounded-2xl ">
+                <div class=" flex bg-[#102861] rounded-2xl ">
                     <div>
                         <img class="mx-5 pt-3" src="c2-assets/india-gate-logo.png" alt="">
                         <button class="text-white bg-[#63B76D] rounded p-3 mx-8 my-4 w-60">World’s No.1 Rice</button>
                         <h2 class="text-white text-2xl p-7">UP to <span class="text-bold">40%OFF</span></h2>
                     </div>
                     <div>
-                        <img class="mr-2 mt-10"  src="c2-assets/india-gate-mock-up.png" alt="">
+                        <img class="mr-2 mt-10" src="c2-assets/india-gate-mock-up.png" alt="">
                     </div>
                 </div>
 
@@ -241,35 +258,36 @@
 
 
     <footer class="relative">
-        <section class="relative bg-[#EFEBE3] flex justify-between container mx-auto rounded-2xl -mb-42">
-            <div>
-                <img class="p-10" src="c2-assets/vegetable-busket.png" alt="">
+        <section class="relative bg-[#EFEBE3] lg:flex justify-between container mx-auto rounded-2xl -mb-42">
+            <div class=" lg:p-10">
+                <img src="c2-assets/vegetable-busket.png" alt="">
             </div>
 
             <div class="text-start pr-50 pt-30">
                 <h2 class="text-3xl font-semibold">Get Grocery News!</h2>
                 <p class="my-4">Exclusive training tips, ticks, product deals and more.</p>
-                <input class="bg-[white] rounded-lg my-3 p-2" type="text" placeholder="email">
+                <input class="bg-[white] rounded-lg my-3 p-2" type="text" placeholder="email"><br>
+                <button class="btn bg-[#179800] text-white p-3 mb-3">Subscribe</button>
             </div>
         </section>
 
-        <section class="bg-[#179800] flex  justify-around pt-80 pb-20">
-            <div>
+        <section class="bg-[#179800] space-y-10 p-5  lg:flex  justify-around pt-80 pb-20">
+            <div class="space-y-3">
                 <img src="c2-assets/Vector.png" alt="">
-                <p class="text-[#FFFFFF]">
+                <p class="text-[#d4d4d4]">
                     Discover a world of treats, toys, and essentials handpicked for your furry friends
                 </p>
             </div>
             <div class="">
-                <ul class="text-[#FFFFFF]">
+                <ul class="text-[#FFFFFF] space-y-3">
                     <li><a>Product</a></li>
                     <li><a>Services</a></li>
                     <li><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div>
-                <h2 class="text-[#FFFFFF]">Follow Us</h2>
-                <div class="flex gap-2">
+            <div class="space-y-2">
+                <h2 class="text-[#FFFFFF] ">Follow Us</h2>
+                <div class="flex gap-7">
                     <img src="c2-assets/1.png" alt="">
                     <img src="c2-assets/2.png" alt="">
                     <img src="c2-assets/3.png" alt="">
